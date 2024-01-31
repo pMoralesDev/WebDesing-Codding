@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>6.- Responsive Sidebar</title>
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="sidebar-inner">
+            <header class="sidebar-header">
+                <button type="button" class="sidebar-burger" onclick="toggleSidebar()">
+                    <i class='bx bx-menu-alt-left' ></i>
+                </button>
+                <img src="MoralesDev-Redondo.png" alt="logo" class="sidebar-logo">
+            </header>
+            <nav class="sidebar-menu">
+                <button type="button">
+                    <i class='bx bx-home-smile' ></i>
+                    <span>Home</span>
+                </button>
+                <button type="button">
+                    <i class='bx bxs-user-account' ></i>
+                    <span>Accounts</span>
+                </button>
+                <button type="button" class="has-border">
+                    <i class='bx bxs-cog' ></i>
+                    <span>Settings</span>
+                </button>
+                <button type="button">
+                    <i class='bx bx-shape-circle' ></i>
+                    <span>Blockchain</span>
+                </button>
+                <button type="button">
+                    <i class='bx bxs-data' ></i>
+                    <span>Databases</span>
+                </button>
+                <button type="button">
+                    <i class='bx bx-podcast' ></i>
+                    <span>AudioVibe</span>
+                </button>
+                <button type="button" class="has-border">
+                    <i class='bx bxs-music' ></i>
+                    <span>Soundblast</span>
+                </button>
+                <button type="button">
+                    <i class='bx bx-folder-open' ></i>
+                    <span>Folders</span>
+                </button>
+                <button type="button">
+                    <i class='bx bxs-layer' ></i>
+                    <span>Lavels</span>
+                </button>
+                <button type="button">
+                    <i class='bx bxs-lock-alt' ></i>
+                    <span>Security</span>
+                </button>
+            </nav>
+        </div>
+    </nav>
+
+    <script type="text/javascript">
+        const toggleSidebar = () => document.body.classList.toggle('open')
+    </script>
+</body>
+</html>
