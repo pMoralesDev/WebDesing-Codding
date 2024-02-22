@@ -1,22 +1,10 @@
-:root {
-    --color-primary: #6C9BCF;
-    --color-danger: #f2273b;
-    --color-success: #1B9C85;
-    --color-warning: #F7D060;
-    --color-white: #fff;
-    --color-info-dark: #7d8da1;
-    --color-dark: #363949;
-    --color-light: rgba(132, 139, 200, 0.18);
-    --color-dark-variant: #677483;
-    --color-background: #f6f6f9;
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
 
-    --card-border-radius: 2rem;
-    --card-padding: 1.8rem;
-
-    --border-radius-1: 0.4rem;
-    --border-radius-2: 1.2rem;
-    
-    --padding-1: 1.2rem;
-    
-    --box-shadow: 0 2rem 3rem var(--color-light);    
+:root{
+    --background-dark: #202020;
+    --background-semidark: #383c41;
+    --backgorund-semilight: #c2c2c2;
+    --backgorund-light: #fff;
+    --logo--color: #1FD6FF;
+    --logo--color2: #1F16FF;
 }

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>09.- Pop Up</title>
+</head>
+<body>
+    <button type="button" onclick="togglePopUp()">Show Pop Up</button>
+    <div class="popup-background" onclick="togglePopUp()"></div>
+
+    <div class="popup">
+        <h2>Pop Up Window</h2>
+        <p>You have opened the Pop Up, it's a very used function in web design</p>
+    </div>
+    <!-- Creamos el script en el propio HTML, simplemente cambia una clase y pone otra -->
+    <script>
+        const togglePopUp = () => {
+            const bodyClassList = document.body.classList
+            if (bodyClassList.contains('open')){
+                bodyClassList.remove('open')
+                bodyClassList.add('close')
+            } else {
+                bodyClassList.remove('close')
+                bodyClassList.add('open')
+            }
+        }
+    </script>
+</body>
+</html>
