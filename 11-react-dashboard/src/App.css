@@ -16,7 +16,7 @@
 }
 
 body {
-    font-family: 'Poppins', 'Ubuntu', sans-serif;
+    font-family: 'Poppins', 'Nunito', sans-serif;
     color: var(--backgorund-semilight);
     background-color: var(--background-dark);
 }
