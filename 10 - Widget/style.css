@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+:root{
+    --background-dark: #202020;
+    --background-semidark: #383c41;
+    --backgorund-semilight: #c2c2c2;
+    --backgorund-light: #fff;
+    --logo--color: #1FD6FF;
+    --logo--color2: #1F16FF;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 1.5;
+    background-color: var(--background-dark);
+    color: var(--backgorund-semilight);
+}
+
+.widget {
+    background-color: var(--background-semidark);
+    width: 350px;
+    border-radius: 8px;
+}
+
+input {
+    display: none;
+}
+
+h2 {
+    margin: 0 0 10px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.content {
+    position: relative;
+    overflow: hidden;
+    height: 160px;
+}
+
+.content-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    width: 1050px;
+    transition: 0.3s;
+}
+
+.content-inner > div {
+    width: inherit;
+    padding: 20px;
+}
+
+label {
+    padding: 20px;
+    font-size: 15px;
+    width: 65px;
+    opacity: 0.35;
+    cursor: pointer;
+}
+
+p {
+    margin: 0;
+    font-size: 15px;
+    color: var(--backgorund-semilight);
+}
+
+.buttons {
+    position: relative;
+    display: flex;
+    border-bottom: 1px solid var(--background-dark);
+}
+
+.underline {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 65px;
+    height: 4px;
+    background: var(--logo--color);
+    transition: 0.2s;
+}
+/*Controlamos el desplazamiento del underline al seleccinar los diferentes labels*/
+.tabs input:nth-child(1):checked ~ .buttons .underline {
+    translate: 0 0;
+}
+
+.tabs input:nth-child(2):checked ~ .buttons .underline {
+    translate: 65px 0;
+}
+
+.tabs input:nth-child(3):checked ~ .buttons .underline {
+    translate: 130px 0;
+}
+/*Controlamos la opacidad del label (botón) seleccionado para que resalte su color*/
+.tabs input:nth-child(1):checked ~ .buttons label:nth-child(1), 
+.tabs input:nth-child(2):checked ~ .buttons label:nth-child(2), 
+.tabs input:nth-child(3):checked ~ .buttons label:nth-child(3) {
+    opacity: 1;
+} 
+/*Controlamos el desplaciemto del contenido asociado a cada label (botón) para que se pueda visualizar*/
+.tabs input:nth-child(1):checked ~ .content > .content-inner {
+    translate: 0 0;
+} 
+
+.tabs input:nth-child(2):checked ~ .content > .content-inner {
+    translate: -350px 0;
+} 
+
+.tabs input:nth-child(3):checked ~ .content > .content-inner {
+    translate: -700px    0;
+} 

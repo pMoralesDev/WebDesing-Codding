@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <title>10.- Widget</title>
+</head>
+<body>
+    <div class="widget">
+        <!--A modo de botones configuramos unos input-radio que van a actuar a modo de selectores para visualizar contenido -->
+        <div class="tabs">
+            <input type="radio" name="group" id="tab-1" checked>
+            <input type="radio" name="group" id="tab-2">
+            <input type="radio" name="group" id="tab-3">
+            <!--En los label asociados a los input-radio configuramos la visualización de un ícono-->
+            <div class="buttons">
+                <label for="tab-1" class="material-symbols-outlined">home</label>
+                <label for="tab-2" class="material-symbols-outlined">lock</label>
+                <label for="tab-3" class="material-symbols-outlined">settings</label>
+                <div class="underline"></div>
+            </div>
+            <!--Contenido que se va a visualizar en función del input-radio seleccionado en cada momento-->
+            <div class="content">
+                <div class="content-inner">
+                    <div>
+                        <h2>Home</h2>
+                        <p>Home contents</p>
+                    </div>
+                    <div>
+                        <h2>Accounts</h2>
+                        <p>Accounts contents</p>
+                    </div>
+                    <div>
+                        <h2>Settings</h2>
+                        <p>Setting content</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
